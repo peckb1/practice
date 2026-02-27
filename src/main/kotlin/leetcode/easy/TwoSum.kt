@@ -1,4 +1,4 @@
-package peckb1.leetcode
+package peckb1.leetcode.easy
 
 class TwoSum {
   /**
