@@ -57,7 +57,3 @@ class LongestPalindromicSubstring {
     return s.substring(start, start + maxLength)
   }
 }
-
-fun main() {
-  println(LongestPalindromicSubstring().longestPalindrome("babad"))
-}
