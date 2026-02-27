@@ -43,29 +43,3 @@ class ListNode(var `val`: Int) {
     return "${`val`}, $next"
   }
 }
-
-fun main() {
-  val l1 = ListNode(9).apply {
-    next = ListNode(9).apply {
-      next = ListNode(9).apply {
-        next = ListNode(9).apply {
-          next = ListNode(9).apply {
-            next = ListNode(9).apply {
-              next = ListNode(9).apply {}
-            }
-          }
-        }
-      }
-    }
-  }
-
-  val l2 = ListNode(9).apply {
-    next = ListNode(9).apply {
-      next = ListNode(9).apply {
-        next = ListNode(9).apply {}
-      }
-    }
-  }
-
-  println(AddTwoNumbers().addTwoNumbers(l1, l2))
-}
