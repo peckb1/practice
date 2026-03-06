@@ -37,7 +37,3 @@ class TaskScheduler {
 data class Job(val id: Char, var remainingRuns: Int) {
   fun performJob() { remainingRuns-- }
 }
-
-fun main() {
-  print(TaskScheduler().leastInterval(charArrayOf('A','A','A','B','C'), 3))
-}

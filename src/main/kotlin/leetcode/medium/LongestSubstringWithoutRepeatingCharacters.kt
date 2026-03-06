@@ -15,8 +15,6 @@ class LongestSubstringWithoutRepeatingCharacters {
     }
     val existingChars = mutableSetOf(s[headIndex])
 
-
-
     while(headIndex < s.length) {
       if (tailIndex >= s.length) {
         if ((tailIndex - headIndex) + 1 < longestSoFar) {

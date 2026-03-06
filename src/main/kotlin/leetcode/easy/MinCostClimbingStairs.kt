@@ -30,7 +30,3 @@ class MinCostClimbingStairs {
     return myCost.also { minCostCache[currentStep] = it }
   }
 }
-
-fun main() {
-  println(MinCostClimbingStairs().minCostClimbingStairs(intArrayOf(1,2,1,2,1,1,1)))
-}

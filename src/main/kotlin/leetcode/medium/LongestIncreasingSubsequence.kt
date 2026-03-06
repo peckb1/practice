@@ -29,7 +29,3 @@ class LongestIncreasingSubsequence {
     return myLength.also { cache[currentIndex] = it }
   }
 }
-
-fun main() {
-  print(LongestIncreasingSubsequence().lengthOfLIS(intArrayOf(9,1,4,2,3,3,7)))
-}

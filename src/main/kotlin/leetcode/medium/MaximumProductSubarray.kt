@@ -25,7 +25,3 @@ class MaximumProductSubarray {
     return globalMax
   }
 }
-
-fun main() {
-  println(MaximumProductSubarray().maxProduct(intArrayOf(-2, 3, 4, -1, 0, -2, 3, 1, 4, 0, 4, 6, -1, 4)))
-}

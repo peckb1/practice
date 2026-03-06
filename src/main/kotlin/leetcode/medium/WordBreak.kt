@@ -21,8 +21,3 @@ class WordBreak {
     return cache[s]!!
   }
 }
-
-fun main() {
-//  println(WordBreak().wordBreak("applepenapple", listOf("apple","pen","ape")))
-    println(WordBreak().wordBreak("catsincars", listOf("cats","cat","sin","in","car")))
-}

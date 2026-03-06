@@ -28,7 +28,3 @@ class PartitionEqualSubsetSum {
     return canSucceedWithMe || canPartition(goal, currentTotal, currentIndex + 1, nums)
   }
 }
-
-fun main() {
-  println(PartitionEqualSubsetSum().canPartition(intArrayOf(1,2,3,4)))
-}

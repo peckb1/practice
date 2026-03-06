@@ -48,7 +48,3 @@ class HouseRobberII {
     }
   }
 }
-
-fun main() {
-  println(HouseRobberII().rob(intArrayOf(2,9,8,3,6)))
-}
