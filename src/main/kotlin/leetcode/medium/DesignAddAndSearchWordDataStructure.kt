@@ -12,13 +12,3 @@ class WordDictionary {
     return trie.search(word)
   }
 }
-
-fun main() {
-  /*
-  ["WordDictionary","addWord","addWord","search","search"]
-[[],["a"],["abcdefghijklmnopqrst"],["a"],["abcdefghijklmnopqrst"]]
-   */
-  val wordDictionary = WordDictionary()
-  wordDictionary.addWord("a")
-  wordDictionary.search("a")
-}

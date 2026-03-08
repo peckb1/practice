@@ -30,7 +30,3 @@ class SlidingWindowMaximum {
     return maxValues.toIntArray()
   }
 }
-
-fun main() {
-  println(SlidingWindowMaximum().maxSlidingWindow(intArrayOf(1,2,1,0,4,2,6), k = 3).toList())
-}
