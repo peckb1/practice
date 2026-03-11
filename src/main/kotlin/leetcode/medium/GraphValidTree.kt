@@ -18,7 +18,7 @@ class GraphValidTree {
       nodeMap[a]?.addEdge(nodeMap[b])
       nodeMap[b]?.addEdge(nodeMap[a])
     }
-    
+
     val visited = mutableSetOf<Int>()
     val start = nodeMap.values.first()
 
