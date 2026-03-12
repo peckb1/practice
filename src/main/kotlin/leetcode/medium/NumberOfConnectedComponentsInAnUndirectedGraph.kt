@@ -38,11 +38,3 @@ class NumberOfConnectedComponentsInAnUndirectedGraph {
     }
   }
 }
-
-fun main() {
-  println(NumberOfConnectedComponentsInAnUndirectedGraph().countComponents(5, arrayOf(
-    intArrayOf(0,1),
-    intArrayOf(1,2),
-    intArrayOf(3,4),
-  )))
-}

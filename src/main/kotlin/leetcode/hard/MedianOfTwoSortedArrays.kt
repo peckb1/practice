@@ -66,4 +66,41 @@ class MedianOfTwoSortedArrays {
       currentCombinedEnd.toDouble()
     }
   }
+
+  fun findMedianSortedArraysBinaryPartition(nums1: IntArray, nums2: IntArray): Double {
+    // Always binary search the smaller array
+    val (smallerArray, largerArray) = if (nums1.size <= nums2.size) { nums1 to nums2 } else { nums2 to nums1 }
+
+    var minPartition = 0
+    var maxPartition = smallerArray.size
+
+    val totalLength = smallerArray.size + largerArray.size
+    val leftHalfSize = (totalLength + 1) / 2
+
+    while (minPartition <= maxPartition) {
+      val partitionA = (minPartition + maxPartition) / 2
+      val partitionB = leftHalfSize - partitionA
+
+      val maxLeftSmallArray  = if (partitionA == 0)                 Int.MIN_VALUE else smallerArray[partitionA - 1]
+      val minRightSmallArray = if (partitionA == smallerArray.size) Int.MAX_VALUE else smallerArray[partitionA]
+
+      val maxLeftLargeArray  = if (partitionB == 0)                 Int.MIN_VALUE else largerArray[partitionB - 1]
+      val minRightLargeArray = if (partitionB == largerArray.size)  Int.MAX_VALUE else largerArray[partitionB]
+
+      if (maxLeftSmallArray <= minRightLargeArray && maxLeftLargeArray <= minRightSmallArray) {
+        // Correct partition found! Calculate the median
+        return if (totalLength % 2 == 0) {
+          (maxOf(maxLeftSmallArray, maxLeftLargeArray) + minOf(minRightSmallArray, minRightLargeArray)) / 2.0
+        } else {
+          maxOf(maxLeftSmallArray, maxLeftLargeArray).toDouble()
+        }
+      } else if (maxLeftSmallArray > minRightLargeArray) {
+        maxPartition = partitionA - 1
+      } else {
+        minPartition = partitionA + 1
+      }
+    }
+
+    throw IllegalArgumentException("Arrays not sorted")
+  }
 }
