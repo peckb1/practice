@@ -1,5 +1,7 @@
 package peckb1.leetcode.easy
 
+import leetcode.data.ListNode
+
 class LinkedListCycleDetection {
   /*
    * Floyd’s Tortoise and Hare algorithm
@@ -16,9 +18,5 @@ class LinkedListCycleDetection {
     }
 
     return false
-  }
-
-  class ListNode(var `val`: Int) {
-    var next: ListNode? = null
   }
 }

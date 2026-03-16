@@ -1,5 +1,7 @@
 package peckb1.leetcode.medium
 
+import leetcode.data.TreeNode
+
 class BinaryTreeLevelOrderTraversal {
   fun levelOrder(root: TreeNode?): List<List<Int>> {
     val nodesByDepth = mutableMapOf<Int, MutableList<Int>>()
@@ -18,10 +20,5 @@ class BinaryTreeLevelOrderTraversal {
     nodesByDepth.getOrPut(depth) { mutableListOf() }.add(root.`val`)
     root.left?.also { updateMap(it, nodesByDepth, depth + 1) }
     root.right?.also { updateMap(it, nodesByDepth, depth + 1) }
-  }
-
-  class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
   }
 }

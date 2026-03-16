@@ -1,5 +1,7 @@
 package peckb1.leetcode.easy
 
+import leetcode.data.TreeNode
+
 class InvertBinaryTree {
   fun invertTree(root: TreeNode?): TreeNode? {
     return root?.invert()
@@ -10,10 +12,5 @@ class InvertBinaryTree {
 
     left = right?.invert()
     right = temp
-  }
-
-  class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
   }
 }

@@ -25,19 +25,3 @@ class LargestRectangleInHistogram {
     return maxArea
   }
 }
-
-fun main() {
-
-  /*
-      | |
-      | |
-      | |
-      | |  |
-      | |  |
-      | ||||
-      ||||||
-   */
-  val heights = intArrayOf(7,1,7,2,2,4)
-
-  print(LargestRectangleInHistogram().largestRectangleArea(heights))
-}

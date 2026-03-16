@@ -1,5 +1,7 @@
 package peckb1.leetcode.medium
 
+import leetcode.data.TreeNode
+
 class KthSmallestIntegerInBST {
   fun kthSmallest(root: TreeNode?, k: Int): Int {
     if (root == null) return 0
@@ -30,10 +32,5 @@ class KthSmallestIntegerInBST {
     }
 
     return -1
-  }
-
-  class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
   }
 }

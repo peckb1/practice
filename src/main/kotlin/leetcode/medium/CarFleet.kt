@@ -30,19 +30,3 @@ class CarFleet {
     return fleets
   }
 }
-
-fun main() {
-  val target = 10
-  val position = intArrayOf(4,1,0,7)
-  val speed = intArrayOf(2,2,1,1)
-
-  println(CarFleet().carFleet(target, position, speed))
-
-//  val a = 102
-//  val b = 10
-//
-//  // Works only for positive 'a' and 'b'
-//  val result: Int = (a + b - 1) / b
-//
-//  println("$a / $b (ceiling) = $result") // Output: 102 / 10 (ceiling) = 11
-}

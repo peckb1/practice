@@ -35,7 +35,3 @@ class ValidParentheses {
     return openSections.isEmpty()
   }
 }
-
-fun main() {
-  println(ValidParentheses().isValid("()"))
-}

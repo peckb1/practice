@@ -1,5 +1,7 @@
 package peckb1.leetcode.medium
 
+import leetcode.data.ListNode
+
 class ReorderLinkedList {
   fun reorderList(head: ListNode?) {
     if (head == null) return
@@ -57,10 +59,6 @@ class ReorderLinkedList {
     }
 
     return slow
-  }
-
-  class ListNode(var `val`: Int) {
-    var next: ListNode? = null
   }
 }
 

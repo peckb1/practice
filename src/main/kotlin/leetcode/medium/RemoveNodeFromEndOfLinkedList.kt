@@ -1,5 +1,7 @@
 package peckb1.leetcode.medium
 
+import leetcode.data.ListNode
+
 
 class RemoveNodeFromEndOfLinkedList {
   fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
@@ -22,27 +24,4 @@ class RemoveNodeFromEndOfLinkedList {
 
     return discardableRoot.next
   }
-}
-
-class ListNode(var `val`: Int) {
-  var next: ListNode? = null
-
-  override fun toString(): String {
-    return "${`val`}, $next"
-  }
-}
-
-fun main() {
-  val head = ListNode(1)
-  head.next = ListNode(2)
-  head.next!!.next = ListNode(3)
-  head.next!!.next!!.next = ListNode(4)
-  head.next!!.next!!.next!!.next = ListNode(5)
-
-  val n = 2
-
-  val result = RemoveNodeFromEndOfLinkedList().removeNthFromEnd(head, n)
-
-  println(result)
-
 }

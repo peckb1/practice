@@ -1,5 +1,7 @@
 package peckb1.leetcode.hard
 
+import leetcode.data.TreeNode
+
 class BinaryTreeMaximumPathSum {
   fun maxPathSum(root: TreeNode?): Int {
     return root?.maxPathOptions()?.let { (a, b, c) -> maxOf(a, b, c) } ?: 0
@@ -23,10 +25,5 @@ class BinaryTreeMaximumPathSum {
   }
 
   data class Options(val maxChild: Int, val maxContainedValue: Int, val maxWithAvailableConnection: Int)
-
-  class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-  }
 }
 

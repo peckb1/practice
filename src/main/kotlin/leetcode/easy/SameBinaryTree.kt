@@ -1,5 +1,7 @@
 package peckb1.leetcode.easy
 
+import leetcode.data.TreeNode
+
 class SameBinaryTree {
   fun isSameTree(p: TreeNode?, q: TreeNode?) = p.isTheSame(q)
 
@@ -10,13 +12,4 @@ class SameBinaryTree {
       && this?.left.isTheSame(other?.left)
       && this?.right.isTheSame(other?.right)
   }
-
-  class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-  }
-}
-
-fun main() {
-  println(SameBinaryTree().isSameTree(null, null))
 }

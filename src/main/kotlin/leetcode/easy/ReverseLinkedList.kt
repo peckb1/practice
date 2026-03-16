@@ -1,5 +1,7 @@
 package peckb1.leetcode.easy
 
+import leetcode.data.ListNode
+
 class ReverseLinkedList {
   fun reverseList(head: ListNode?): ListNode? {
     if (head == null) return head
@@ -28,10 +30,6 @@ class ReverseLinkedList {
     }
 
     return prev
-  }
-
-  class ListNode(var `val`: Int) {
-    var next: ListNode? = null
   }
 }
 

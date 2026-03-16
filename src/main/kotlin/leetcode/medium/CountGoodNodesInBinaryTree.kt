@@ -1,5 +1,6 @@
 package peckb1.leetcode.medium
 
+import leetcode.data.TreeNode
 import kotlin.math.max
 
 class CountGoodNodesInBinaryTree {
@@ -20,10 +21,5 @@ class CountGoodNodesInBinaryTree {
     val rightGoods = node.right?.let { right -> goodNodeCount(right, max(newMax, right.`val`)) }
 
     return (leftGoods ?: 0) + (rightGoods ?: 0) + (if (amIGood) 1 else 0)
-  }
-
-  class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
   }
 }

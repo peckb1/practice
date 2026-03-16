@@ -1,5 +1,7 @@
 package peckb1.leetcode.medium
 
+import leetcode.data.TreeNode
+
 class ConstructBinaryTreeFromPreorderAndInorderTraversal {
   fun buildTree(preorder: IntArray, inorder: IntArray): TreeNode? {
     if (preorder.isEmpty()) return null
@@ -43,17 +45,4 @@ class ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
     return build(0, 0, inorder.lastIndex)
   }
-
-
-  class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-  }
-}
-
-fun main() {
-  val preorder = intArrayOf(8, 4, 2, 6, 5, 7, 12, 10, 14)
-  val inorder  = intArrayOf(2, 4, 5, 6, 7, 8, 10, 12, 14)
-
-  println(ConstructBinaryTreeFromPreorderAndInorderTraversal().buildTreeFancy(preorder, inorder))
 }

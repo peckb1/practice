@@ -1,5 +1,7 @@
 package peckb1.leetcode.medium
 
+import leetcode.data.TreeNode
+
 class LowestCommonAncestorInBinarySearchTree {
   tailrec fun lowestCommonAncestor(root: TreeNode?, p: TreeNode, q: TreeNode): TreeNode? {
     if (root == null) return null
@@ -14,10 +16,5 @@ class LowestCommonAncestorInBinarySearchTree {
       lowest.`val` > root.`val` /* & highest.val > root.val */ -> lowestCommonAncestor(root.right, lowest, highest)
       else -> root
     }
-  }
-
-  class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
   }
 }

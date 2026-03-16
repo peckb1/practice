@@ -1,5 +1,7 @@
 package peckb1.leetcode.hard
 
+import leetcode.data.TreeNode
+
 class Codec {
   fun serialize(root: TreeNode?): String {
     if (root == null) return ""
@@ -42,9 +44,4 @@ class Codec {
 
   // Wrapper class as the implementation of ArrayDeque can sometimes not allow `null` values to be placed
   class MaybeTreeNode(val node: TreeNode?)
-
-  class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-  }
 }

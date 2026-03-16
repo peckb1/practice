@@ -1,5 +1,7 @@
 package peckb1.leetcode.medium
 
+import leetcode.data.ListNode
+
 
 class AddTwoNumbers {
   fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
@@ -32,14 +34,6 @@ class AddTwoNumbers {
     val initial: ListNode? = null
     return sumString.reversed().toCharArray().fold(initial) { child, me ->
       ListNode(me.digitToInt()).apply { next = child }
-    }
-  }
-
-  class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-
-    override fun toString(): String {
-      return "${`val`}, $next"
     }
   }
 }

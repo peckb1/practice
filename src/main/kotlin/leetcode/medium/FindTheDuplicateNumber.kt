@@ -22,7 +22,3 @@ class FindTheDuplicateNumber {
     return slow
   }
 }
-
-fun main() {
-  println(FindTheDuplicateNumber().findDuplicate(intArrayOf(1, 2, 3, 4, 3)))
-}

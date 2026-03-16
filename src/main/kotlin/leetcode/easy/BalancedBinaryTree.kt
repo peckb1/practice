@@ -17,9 +17,4 @@ class BalancedBinaryTree {
     null -> 0
     else -> 1 + maxOf(left.depth(), right.depth())
   }
-
-  data class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-  }
 }

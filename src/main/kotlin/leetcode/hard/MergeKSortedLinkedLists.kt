@@ -1,5 +1,6 @@
 package peckb1.leetcode.hard
 
+import leetcode.data.ListNode
 import java.util.PriorityQueue
 
 class MergeKSortedLinkedLists {
@@ -49,9 +50,5 @@ class MergeKSortedLinkedLists {
     }
 
     return discardableRoot.next
-  }
-
-  class ListNode(var `val`: Int) {
-    var next: ListNode? = null
   }
 }

@@ -1,5 +1,7 @@
 package peckb1.leetcode.easy
 
+import leetcode.data.ListNode
+
 class MergeTwoSortedLinkedLists {
   fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
     if (list1 == null && list2 == null) return null
@@ -35,9 +37,5 @@ class MergeTwoSortedLinkedLists {
     }
 
     return discardableRoot.next
-  }
-
-  class ListNode(var `val`: Int) {
-    var next: ListNode? = null
   }
 }

@@ -1,5 +1,7 @@
 package peckb1.leetcode.easy
 
+import leetcode.data.TreeNode
+
 class DiameterOfBinaryTree {
   private var maxDiameter = 0
 
@@ -18,10 +20,5 @@ class DiameterOfBinaryTree {
     maxDiameter = maxOf(maxDiameter, left + right)
 
     return 1 + maxOf(left, right)
-  }
-
-  data class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
   }
 }

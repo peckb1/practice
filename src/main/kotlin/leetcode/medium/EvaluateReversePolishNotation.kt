@@ -51,7 +51,3 @@ class EvaluateReversePolishNotation {
     }
   }
 }
-
-fun main() {
-  println(EvaluateReversePolishNotation().evalRPN(arrayOf("1","2","+","3","*","4","-")))
-}
