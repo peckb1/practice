@@ -16,11 +16,11 @@ class RemoveNodeFromEndOfLinkedList {
     }
 
     while (front != null) {
-      front = front?.next
+      front = front.next
       back = back?.next
     }
 
-    back?.next = back?.next?.next
+    back?.next = back.next?.next
 
     return discardableRoot.next
   }

@@ -1,5 +1,6 @@
 package peckb1.leetcode.easy
 
+import leetcode.data.TreeNode
 import kotlin.math.abs
 
 class BalancedBinaryTree {
