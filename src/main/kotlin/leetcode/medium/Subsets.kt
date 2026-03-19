@@ -21,7 +21,3 @@ class Subsets {
     return children.also { it.add(me) }
   }
 }
-
-fun main() {
-  println(Subsets().subsets(intArrayOf(1, 2, 3)))
-}
