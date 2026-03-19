@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class LongestRepeatingCharacterReplacement {
   fun characterReplacement(s: String, k: Int): Int {

@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 import java.util.PriorityQueue
 import kotlin.math.sqrt

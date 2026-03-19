@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class ValidSudoku {
   fun isValidSudoku(board: Array<CharArray>): Boolean {

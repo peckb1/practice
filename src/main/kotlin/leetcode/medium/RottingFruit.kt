@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class RottingFruit {
   private typealias Location = Pair<Int, Int>

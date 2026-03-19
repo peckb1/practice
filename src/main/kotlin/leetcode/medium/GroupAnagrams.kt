@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 import peckb1.leetcode.easy.ValidAnagram
 

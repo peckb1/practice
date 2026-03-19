@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class TopKFrequentElements {
   fun topKFrequent(nums: IntArray, k: Int): IntArray {

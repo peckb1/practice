@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class MinStack() {
   data class Element(val value: Int, val minInStack: Int)

@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class DailyTemperatures {
   fun dailyTemperatures(temperatures: IntArray): IntArray {

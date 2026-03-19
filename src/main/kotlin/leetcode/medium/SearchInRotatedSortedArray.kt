@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class SearchInRotatedSortedArray {
   fun search(nums: IntArray, target: Int): Int {

@@ -1,4 +1,4 @@
-package peckb1.leetcode.easy
+package leetcode.easy
 
 import java.util.PriorityQueue
 

@@ -1,4 +1,4 @@
-package peckb1.training
+package training
 
 import java.util.ArrayDeque
 import java.util.Queue

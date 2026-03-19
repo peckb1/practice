@@ -1,4 +1,4 @@
-package peckb1.leetcode.hard
+package leetcode.hard
 
 class MedianOfTwoSortedArrays {
   fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {

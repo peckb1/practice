@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class CourseScheduleII {
   fun findOrder(numCourses: Int, prerequisites: Array<IntArray>): IntArray {

@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 typealias UserId = Int
 typealias Timestamp = Int

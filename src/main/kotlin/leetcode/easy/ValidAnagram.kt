@@ -1,4 +1,4 @@
-package peckb1.leetcode.easy
+package leetcode.easy
 
 class ValidAnagram {
   fun isAnagram(s: String, t: String): Boolean {

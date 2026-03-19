@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class WordBreak {
   fun wordBreak(s: String, wordDict: List<String>): Boolean {

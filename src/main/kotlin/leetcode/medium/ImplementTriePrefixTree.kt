@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class PrefixTree {
   private val roots = mutableMapOf<Char, Node>()

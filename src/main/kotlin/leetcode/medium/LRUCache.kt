@@ -1,4 +1,4 @@
-package peckb1.leetcode.medium
+package leetcode.medium
 
 class LRUCache(val capacity: Int) : LinkedHashMap<Int, Int>(capacity, 0.75f, true) {
 

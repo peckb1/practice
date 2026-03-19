@@ -1,4 +1,4 @@
-package peckb1.leetcode.hard
+package leetcode.hard
 
 import java.awt.SystemColor.window
 import java.util.PriorityQueue

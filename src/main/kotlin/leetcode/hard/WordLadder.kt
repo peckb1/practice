@@ -1,4 +1,4 @@
-package peckb1.leetcode.hard
+package leetcode.hard
 
 class WordLadder {
   fun ladderLength(beginWord: String, endWord: String, wordList: MutableList<String>): Int {

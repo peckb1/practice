@@ -1,4 +1,4 @@
-package peckb1.leetcode.hard
+package leetcode.hard
 
 class LargestRectangleInHistogram {
   fun largestRectangleArea(heights: IntArray): Int {
