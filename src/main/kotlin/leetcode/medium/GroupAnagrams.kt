@@ -1,6 +1,6 @@
 package leetcode.medium
 
-import peckb1.leetcode.easy.ValidAnagram
+import leetcode.easy.ValidAnagram
 
 class GroupAnagrams {
   fun groupAnagrams(strs: Array<String>): List<List<String>> {

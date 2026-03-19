@@ -1,6 +1,6 @@
 package leetcode.medium
 
-import peckb1.leetcode.easy.BinarySearch
+import leetcode.easy.BinarySearch
 
 class SearchA2DMatrix {
   val binarySearch = BinarySearch()
