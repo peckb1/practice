@@ -1,4 +1,4 @@
-package leetcode.pathing
+package leetcode.algo
 
 import java.util.PriorityQueue
 

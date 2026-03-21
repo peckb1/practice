@@ -1,8 +1,8 @@
 package leetcode.medium
 
-import leetcode.pathing.Distance
-import leetcode.pathing.Graph
-import leetcode.pathing.dijkstra
+import leetcode.algo.Distance
+import leetcode.algo.Graph
+import leetcode.algo.dijkstra
 
 class NetworkDelayTime {
   fun networkDelayTime(times: Array<IntArray>, n: Int, k: Int): Int {
