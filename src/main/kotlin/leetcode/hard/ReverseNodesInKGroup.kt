@@ -55,9 +55,3 @@ class ReverseNodesInKGroup {
     return prev
   }
 }
-
-fun main() {
-  val head = ListNode.buildList(listOf(1,2,3,4,5,6))
-
-  println(ReverseNodesInKGroup().reverseKGroup(head,2))
-}

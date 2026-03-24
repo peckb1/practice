@@ -62,7 +62,3 @@ class AlienDictionary {
     return if (result.length == numberOfPrerequisitesPerNode.size) result.toString() else ""
   }
 }
-
-fun main() {
-  println(AlienDictionary().foreignDictionary(arrayOf("hrn","hrf","er","enn","rfnn")))
-}

@@ -30,7 +30,3 @@ class LongestCommonSubsequence {
     return lcs(0, 0)
   }
 }
-
-fun main() {
-  println(LongestCommonSubsequence().longestCommonSubsequence("mhunuzqrkzsnidwbun", "szulspmhwpazoxijwbq"))
-}
